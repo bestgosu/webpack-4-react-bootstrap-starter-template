@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import ApolloClient, { gql }  from "apollo-boost";
+let client = new ApolloClient({
+	uri:"http://localhost:9191"
+});
+
 const App = () => {
   return (
     <div className="container">
